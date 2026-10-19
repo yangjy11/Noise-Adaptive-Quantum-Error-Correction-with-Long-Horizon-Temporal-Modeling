@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aqec-s4-methods"
+version = "0.1.0"
+description = "AQEC-S4 network, first-order meta-learning, and transfer fine-tuning"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.2,<3", "numpy>=1.24,<3"]
+
+[project.scripts]
+aqec-s4-demo = "aqec_s4_methods.demo:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
